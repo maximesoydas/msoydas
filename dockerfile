@@ -3,7 +3,7 @@ FROM python:3
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1 \
-    DEBUG=False \
+    DEBUG=True \
     PORT=8000
 
 ADD . .
