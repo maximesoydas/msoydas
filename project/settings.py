@@ -14,6 +14,9 @@ from pathlib import Path
 import os
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+import django_on_heroku
+
+django_on_heroku.settings(locals())
 
 sentry_sdk.init(
     dsn="https://1761d6feba8c4762a6f784c7d820c0e0@o4503982033338368.ingest.sentry.io/4503990376923136",
