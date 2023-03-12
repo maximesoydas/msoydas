@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pdf_tools.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('extract/', views.extract_image, name='extract_image'),]
